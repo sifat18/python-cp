@@ -9,3 +9,9 @@ ss=sys.stdin.readline()
 # for faster output fast convert it to string
 # sys.stdout.write(s)
 sys.stdout.write(ss)
+
+# For getting input from input.txt file
+sys.stdin = open('input.txt', 'r')
+ 
+# Printing the Output to output.txt file
+sys.stdout = open('output.txt', 'w')
