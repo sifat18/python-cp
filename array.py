@@ -13,6 +13,6 @@ print(ar)
 ar.remove(1)  # REMOVE the first time that number appears
 print(ar)
 # print ("The occurrences of #2 in array is : ")
-print(ar.count(2))
+print(ar.count(2))  
 ar.reverse()
 print(ar)
