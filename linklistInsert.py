@@ -42,7 +42,7 @@ while(temp):
 # output 2,11,23,42 for insert first 
 
 # insert at last --> traverse first and find the last node in temp
-#traverse by checking next node is available or not
+# traverse by checking next node is available or not
 temp2=l.head #at the end it will contain the last node 
 while(temp2.next):
     print(temp2.data,end=" ")
@@ -53,3 +53,24 @@ print('insert at last')
 while(temp3):
     print(temp3.data,end=" ")
     temp3=temp3.next
+
+# trying delete
+ #at the end it will contain the last node 
+def delete(key):
+    temp2=l.head
+    if temp2.data==key:
+        l.head=temp2.next
+        temp2=None
+        return
+    else:
+        while(temp2.next.data is not key):
+            temp2=temp2.next
+        temp2.next=temp2.next.next
+        return 
+
+
+delete(23)       
+temp=l.head #at the end it will contain the last node 
+while(temp):
+    print(temp.data,end=" ")
+    temp=temp.next
